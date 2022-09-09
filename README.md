@@ -1,35 +1,44 @@
-Datastage Project
+# Datastage Project
 DataStage is an ETL tool which is used to Extract the data from different data source, Transform the data as per the business requirement and Load into the target database. The data source can be of any type like Relational databases, files, external data sources, etc.
 
-Important Clients Interface
-Three components comprise the DataStage client: DataStage Administrator, DataStage Designer, DataStage Director.
+- ## Important Clients Interface
 
-![image](https://user-images.githubusercontent.com/111442914/189316206-d1681ee5-8070-4c2b-b4a8-060a53647afe.png)
+- #### Three components comprise the DataStage client: DataStage Administrator, DataStage Designer, DataStage Director.
 
-RESPONSIBILITIES FOR Datastage Administrator:
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/IMPS.PNG)
+
+
+- ## RESPONSIBILITIES FOR Datastage Administrator:
 Developing new tools and processes to ensure effective use of DataStage product. The position will also be responsible for administrating and maintaining a DataStage shared environment. This includes: Designing and sizing the environment.
 
-RESPONSIBILITIES FOR Datastage Designer:
+
+- ## RESPONSIBILITIES FOR Datastage Designer:
 The DataStage Designer is the primary interface to the metadata repository and provides a graphical user interface that enables you to view, edit, and assemble DataStage objects from the repository needed to create an ETL job. An ETL job should include source and target stages.
 
-RESPONSIBILITIES FOR Datastage Director:
+
+- ## RESPONSIBILITIES FOR Datastage Director:
 DataStage Director has three view options: The Status view displays the status, date and time started, elapsed time, and other run information about each job in the selected repository category. The Schedule view displays job scheduling details. The Log view displays all of the events for a particular run of a job.
 
-![image](https://user-images.githubusercontent.com/111442914/189316276-0b66c09a-8606-48cb-88c8-19c9e6a309ab.png)
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/DIRECTOR_CLIENT.PNG)
 
-Oracle connector
-Oracle connector is used to access Oracle database systems and perform various read, write, and load functions. Setting required user privileges.
 
-![image](https://user-images.githubusercontent.com/111442914/189316479-5cb70b88-e1c1-468d-b27f-4c5ad1c93209.png)
+- ## Oracle connector 
+Oracle connector  is used to access Oracle database systems and perform various read, write, and load functions. Setting required user privileges.
 
-Parameter sets
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/ORACLE_DATA_CONN.PNG)
+
+
+- ## Parameter sets 
 Parameter sets enable you to expose different parameters to the user. And, to return different information based on the parameters specified by the user. You can only use one parameter set at a time.
 
-![image](https://user-images.githubusercontent.com/111442914/189316522-25a30f96-e5a4-4323-8b18-774fb1a2553d.png)
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/GLOBAL_PARAMETER.PNG)
+
 
 ########################################################################################
 
-Project consists of 4 major jobs-
+## Project consists of 4 major jobs-
+
+```
 ORA - data from Oracle Database
 DS - Dataset Files
 FILE - Sequential Files
@@ -45,43 +54,60 @@ FILTER
 REMOVE_DUPLICATES
 ORACLE_DATABASE
 EXECUTE_COMMANDS
+```
 
-- ( 1 ) Requirement: SOURCE --> TARGET
-![image](https://user-images.githubusercontent.com/111442914/189316799-57c2aee7-39be-432c-bc83-156a0d885aa9.png)
 
-Implementation:
-![image](https://user-images.githubusercontent.com/111442914/189316895-2debe607-160b-455e-a7fd-e3876e65d0f8.png)
+### - ( 1 ) Requirement: SOURCE  -->  TARGET
 
-- ( 2 ) Requirement: SOURCE --> TARGET
-![image](https://user-images.githubusercontent.com/111442914/189316997-021ca609-9745-48ae-b5ab-463f058906b1.png)
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/JOB1_SCHEMA.PNG)
 
-Implementation:
-alt text
+### Implementation:
 
-alt text
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/JOB1_UI.PNG)
 
-- ( 3 ) Requirement: SOURCE --> TARGET
-alt text
 
-Implementation:
-alt text
 
-- ( 4 ) Requirement: SOURCE --> TARGET
-alt text
+### - ( 2 ) Requirement: SOURCE  -->  TARGET
 
-Implementation:
-alt text
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/JOB2_SCHEMA.PNG)
 
-SEQUENCIAL JOBS
+### Implementation:
+
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/JOB2_UI.PNG)
+
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/JOB2_UI_CONTAINER.PNG)
+
+
+### - ( 3 ) Requirement: SOURCE  -->  TARGET
+
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/JOB3_SCHEMA.PNG)
+
+### Implementation:
+
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/JOB3_UI.PNG)
+
+### - ( 4 ) Requirement: SOURCE  -->  TARGET
+
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/JOB4_SCHEMA.PNG)
+
+### Implementation:
+
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/JOB4_UI.PNG)
+
+
+## SEQUENCIAL JOBS
 Sequence job, that you use to specify a sequence of parallel jobs or server jobs to run. You specify the control information, such as the different courses of action to take depending on whether a job in the sequence succeeds or fails.
 
-alt text
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/SEQUENTIAL_JOB.PNG)
 
-alt text
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/DC_SEQ_LOGS.PNG)
+
 
 ########################################################################################
 
-Some more Jobs-
+## Some more Jobs-
+
+```
 
 1] SRC :- EMP(ORA)
    TRG(FILE) :- EMPNO,ENAME,SAL,SEQ_NUM
@@ -152,23 +178,32 @@ Some more Jobs-
 	SEQ_NUM = GENERATE SEQUENCE NUMBER
 
 
-- ( 1 )
-alt text
+```
 
-- ( 2 )
-alt text
+### - ( 1 )
 
-- ( 3 )
-alt text
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/J1_UI.PNG)
 
-- ( 4 )
-alt text
+### - ( 2 )
 
-- ( 5 )
-alt text
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/J2_UI.PNG)
 
-- ( 6 )
-alt text
+### - ( 3 )
 
-- ( 7 )
-alt text
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/J3_UI.PNG)
+
+### - ( 4 )
+
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/J4_UI.PNG)
+
+### - ( 5 )
+
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/J5_UI.PNG)
+
+### - ( 6 )
+
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/J6_UI.PNG)
+
+### - ( 7 )
+
+![alt text](https://github.com/mohitkm2302/Datastage_Project/blob/main/PROJECT/pics/J7_UI.PNG)
